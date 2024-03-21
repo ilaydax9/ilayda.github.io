@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OnePager</title>
+<link href="javascript/css/stylesheet.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+<header>
+        <div class="logoo">
+            <img class="logo" src="images/DigitalCraftblack.png" width="300" height="47" alt=""/>
+            <p class="slogan">von Bits und Bytes zu großartigen Ergebnissen</p>
+    </div>
+</header>
+        <div class="navbar">
+                <a href="#home">Über uns</a>
+                <a href="#news">News</a>
+                <a href="#contact">Produkte</a>
+        </div>
+        
+ 
+  <div class="main">
+  <h1>Die Webdesign-Agentur für<br> zukunftsweisende Websites.</h1>
+    <img src="images/webdesign-agentur-slide.jpg" width="100%" alt=""/>
+      <h2 class="ueberschrifte"> Über uns</h2>
+    <p class="ueberuns">Bei DigitalCraft sind wir mehr als nur eine digitale Agentur - wir sind Ihre kreative Partner auf dem Weg zum digitalen Erfolg. Seit unserer Gründung im Jahr 2023 haben wir uns dem Handwerk der digitalen Innovation verschrieben und sind stolz darauf, Unternehmen dabei zu helfen, ihre Online-Präsenz zu verbessern und ihre Geschäftsziele zu erreichen.<br><br>Unsere Mission ist es, maßgeschneiderte digitale Lösungen zu entwickeln, die nicht nur ansprechend sind, sondern auch Ergebnisse liefern. Mit einem engagierten Team von talentierten Designern, Entwicklern und Marketingexperten sind wir bereit, Ihre digitale Vision Wirklichkeit werden zu lassen.<br><br>Unsere Werte bilden das Fundament unserer Arbeit. Kreativität, Fachwissen und Leidenschaft treiben uns an, innovative Lösungen zu entwickeln, die Ihre Marke auf eine neue Ebene bringen. Wir glauben an enge Zusammenarbeit und offene Kommunikation, um sicherzustellen, dass Ihre Ziele und Erwartungen stets im Mittelpunkt stehen.<br><br>Was uns von anderen unterscheidet, ist unser Engagement für Exzellenz in allem, was wir tun. Jedes Projekt, das wir übernehmen, wird mit höchster Sorgfalt und Aufmerksamkeit zum Detail behandelt. Wir sind stolz darauf, hochwertige Arbeit zu liefern, die nicht nur ästhetisch ansprechend ist, sondern auch messbare Ergebnisse liefert.<br><br>Ob Sie eine neue Website benötigen, Ihre Social-Media-Präsenz verbessern möchten oder eine maßgeschneiderte digitale Marketingstrategie benötigen - bei DigitalCraft sind Sie in guten Händen. Wir sind hier, um Ihnen zu helfen, Ihr digitales Potenzial zu entfesseln und Ihre Marke erfolgreich in die Zukunft zu führen.</p>
+  </div>
+        
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="images/slider01.jpg" width="783" height="387" alt=""/>
+  </div>
+
+<div class="mySlides fade">
+   <img src="images/slider02.jpg" width="783" height="387" alt=""/>
+</div>
+
+<div class="mySlides fade">
+   <img src="images/slider03.jpeg" width="783" height="387" alt=""/> 
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+        
+<br>
+
+<div class="slidedot">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        
+<div class="main">
+  <h2 class="ueberunstitle">Dienstleistungen</h2>
+    <div class= "dienst">
+        <li>Erstellung maßgeschneiderter Websites, die sowohl ästhetisch ansprechend als auch benutzerfreundlich sind.</li>
+        <li>Responsive Design, um sicherzustellen, dass die Website auf verschiedenen Geräten und Bildschirmgrößen optimal angezeigt wird.</li>
+        <li>Integration von Content-Management-Systemen (CMS) wie WordPress, um die Möglichkeit zu geben, die Websites einfach zu aktualisieren und zu verwalten.</li>
+        <li>Entwicklung einer umfassenden Social-Media-Strategie, die auf die Ziele und Zielgruppe des Kunden zugeschnitten ist.</li>
+        <li>Erstellung von ansprechendem und relevantem Content für verschiedene Social-Media-Plattformen wie Facebook, Instagram, Twitter und LinkedIn.</li>
+        <li>Community-Management, um Interaktionen mit der Zielgruppe zu fördern und das Engagement zu steigern.</li>
+  </div>
+    
+   
+<div class="row">
+  <div class="column">
+  <img src="images/SEO.jpg" alt="" width="100%" /> </div>
+  <div class="column">
+  <img src="images/Optimeirung.jpg" alt="" width="100%"/> </div>
+  </div>
+
+
+  <h2 class="ueberunstitle">Projekte</h2>
+    <div class= "dienst">
+        <p>DigitalCraft hat eine beeindruckende E-Commerce-Website für ein lokales Boutique-Kleidungsgeschäft erstellt. Die neue Website bietet eine benutzerfreundliche Navigation, einen intuitiven Checkout-Prozess und eine Vielzahl von Zahlungsoptionen. Durch die Integration von Produktfiltern, Suchfunktionen und Kundenbewertungen wurde ein nahtloses Einkaufserlebnis geschaffen, das die Konversionsraten des Unternehmens deutlich verbesserte. Unser erfahrenes Content-Team hat informative Blogposts, Anleitungen und Fachartikel zu den neuesten Technologien und Trends entwickelt. Durch die Erstellung von ansprechenden animierten Erklärvideos und Infografiken konnten wir komplexe Konzepte leicht verständlich machen und die Leserbindung erhöhen. Zusätzlich wurden herunterladbare Ressourcen wie E-Books und Whitepapers erstellt, um Leads zu generieren und das Markenimage des Unternehmens zu stärken.</p>
+  </div>
+    
+  <div class="row">
+  <div class="columnpro"><img src="images/boutiquepage.png" alt="" width="100%" /></div>
+  </div>
+    </div>
+        
+          <div class="container">
+        <h3>Kontaktformular</h3>
+  <form action="/action_page.php">
+    <label for="fname">Vorname</label>
+    <input type="text" id="fname" name="firstname" placeholder="Name">
+
+    <label for="lname">Nachname</label>
+    <input type="text" id="lname" name="lastname" placeholder="Nachname">
+      
+      <label for="fname">E-Mail*</label>
+    <input type="text" id="fname" name="firstname" placeholder="ilayda.zengin@cgg.at">
+
+    <label for="country">Land</label>
+    <select id="country" name="country">
+      <option value="australia">Österreich</option>
+      <option value="canada">Deutschland</option>
+      <option value="usa">Frankreich</option>
+    </select>
+
+    <label for="subject">Nachricht</label>
+    <textarea id="subject" name="subject" placeholder="schreiben Sie etwas" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+        
+        
+    <footer class="footer">
+      <div class="graubox">
+            <div class="border"></div>
+         <div class="social-icons">
+    <a href="https://www.facebook.com/" class="icon-link">
+      <img src="images/facebook-icon.png" alt="Facebook" width="40" height="40">
+    </a>
+    <a href="https://www.youtube.com/" class="icon-link">
+      <img src="images/youtube-icon.png" alt="Youtube" width="40" height="40">
+    </a>
+    <a href="https://www.instagram.com/" class="icon-link">
+      <img src="images/instagram-icon.png" alt="Instagram" width="40" height="40">
+    </a>
+             <a href="https://www.instagram.com/" class="icon-link">
+      <img src="images/twitterX.png" alt="Instagram" width="40" height="40">
+    </a>
+  </div>
+            <div class="footer-unternehmen">
+            <h3 class="footer-one">Unternehmen</h3>
+            <p class="footer-onetext">Über uns<br>Presse<br>Careers<br>Forschung</p>
+            </div>
+          
+            <div class="footer-produkte">
+            <h3 class="footer-two">Produkte</h3>
+            <p class="footer-onetext">Website erstellen<br>
+            Webshop erstellen<br>Domain einrichten<br>Logo erstellen</p>
+                </div>
+          
+        <div class="footer-service">
+            <h3 class="footer-two">Service</h3>
+          <p class="footer-onetext">Blogs<br>
+          Community Events<br>
+          Inspiration<br>
+          Hilfscenter</p>
+              </div>
+
+        <div class="footer-logo">
+          <img src="images/digitalcraftlogo.png" width="302" height="45" alt=""/> 
+          <p class="address">Hütteldorfer Straße 7-17 / 1150 Wien<br>01 5991695212<br>ilayda.zengin@cgg.at</p>
+        </div>
+    
+          
+      </div>
+    </footer>
+        </body>
+</html>
