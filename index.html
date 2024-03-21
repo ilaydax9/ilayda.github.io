@@ -6,10 +6,10 @@
 <link href="javascript/css/stylesheet.css" rel="stylesheet" type="text/css">
     </head>
     <style>
-        @charset "UTF-8";
+ @charset "UTF-8";
 /* CSS Document */
 
-        @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   body {
     font-size: 14px; /* Beispiel für eine größere Schriftgröße auf kleinen Bildschirmen */
   }
@@ -20,6 +20,24 @@
       }
     }
 
+  @media screen and (max-width: 600px) {
+      img {
+        max-width: 100%; /* Das Bild passt sich der Bildschirmbreite an */
+      }
+    }
+
+    /* Media Query für Tablets mit einer Breite zwischen 601 und 1024 Pixeln */
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+      img {
+        max-width: 80%; /* Das Bild wird auf Tablets nicht die volle Bildschirmbreite einnehmen */
+      }
+    }
+
+@media screen and (min-width: 1025px) {
+  /* Stilregeln für Desktops */
+}
+
+
 .logo {
     background-color: #FFFFFF;
     margin-left: 500px;
@@ -27,19 +45,22 @@
 }
 .slogan {
     color: #000000;
-    margin-left: 508px;
+    margin-left: 525px;
 }
 body {
     background-color: #000000;
 }
 .logoo {
-   background-color: #FFFFFF;
+    background-color: #FFFFFF;
     margin-top: 54px;
     width: 100%;
+    min-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .navbar {
-   overflow: hidden;
+    overflow: hidden;
     background-color: #10597c;
     position: fixed;
     top: 0;
@@ -87,6 +108,7 @@ body {
     margin-left: 5%;
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 /* Next & previous buttons */
@@ -197,6 +219,9 @@ body {
   float: left;
   width: 33.33%;
   padding: 5px;
+    max-width: 100%;
+  height: auto;
+    display: block;
 }
 
 /* Clearfix (clear floats) */
@@ -214,6 +239,7 @@ body {
     width: 60%;
     padding: 5px;
     margin-left: 20%;
+    display: block;
 
 }
 
@@ -227,6 +253,8 @@ body {
     /* [disabled]border-top: 4px solid #FFFFFF; */
     /* [disabled]padding-top: 59px; */
     height: 413px;
+    width: 100%;
+    display: row;
 }
 .footer-unternehmen  {
     color: #FFFFFF;
@@ -291,6 +319,8 @@ body {
     float: left;
     text-align: left;
     margin-top: -247px;
+  
+  height: auto;
 }
 
 .footer-service  {
@@ -325,6 +355,8 @@ body {
 }
 .footer {
     padding-top: 6%;
+    width: 100%;
+     display: flex;
 }
 
 input[type=text], select, textarea {
@@ -369,12 +401,40 @@ input[type=submit]:hover {
     margin-left: 18%;
     margin-top: -86px;
     text-shadow: 0px 0px;
+    float: left;
+    clear: both;
+    /* [disabled]-webkit-box-sizing: inherit; */
+    /* [disabled]-moz-box-sizing: inherit; */
+    /* [disabled]box-sizing: inherit; */
+    display: inline;
 }
 
-    
-    
-    
-    
+.mySlides fade{
+    max-width: 100%;
+  height: auto;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
     </style>
     <body>
 <header>
